@@ -1,0 +1,19 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+class JUnitTestDriver {
+
+	@Test
+	void test() {
+		WebDriver driver = null;
+        System.setProperty("webdriver.chrome.driver", "D:\\webdriver\\chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.get("https://www.npru.ac.th");
+        driver.quit();
+		fail("Not yet implemented");
+	}
+
+}
